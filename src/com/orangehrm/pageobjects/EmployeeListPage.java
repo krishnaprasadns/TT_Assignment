@@ -80,6 +80,10 @@ public class EmployeeListPage {
 		Assert.assertEquals(personalDetailsHeader.isDisplayed(), true);
 	}
 	
+	
+	 	
+	
+	
 	public void uploadImage(String imagePath)
 	{
 
