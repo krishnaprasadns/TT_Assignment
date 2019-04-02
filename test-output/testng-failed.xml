@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TookiTaki]">
+  <parameter name="app" value="orangehrm"/>
+  <parameter name="browser" value="Chrome"/>
+  <test name="ChromeBrowserTest(failed)">
+    <parameter name="app" value="orangehrm"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.orangehrm.tests.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.HomePageTest -->
+      <class name="com.orangehrm.tests.EmployeeListPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.EmployeeListPageTest -->
+      <class name="com.orangehrm.tests.GenInfoPageTest">
+        <methods>
+          <include name="verifyGenInfoFieldsTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.GenInfoPageTest -->
+      <class name="com.orangehrm.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- ChromeBrowserTest(failed) -->
+</suite> <!-- Failed suite [TookiTaki] -->

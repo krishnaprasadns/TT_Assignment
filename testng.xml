@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TookiTaki">
+	<!-- <listeners> <listener class-name="com.edge.test.AnnotationTransformer"/> 
+		</listeners> -->
+	<!-- 
+	<test name="ChromeBrowserTest">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+  			<class name="com.orangehrm.tests.LoginPageTest" /> 
+  			
+		</classes>
+	</test>  
+	-->
+ 	<test name="ChromeBrowserTest">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="app" value="orangehrm" />
+		<classes>
+ 			<class name="com.orangehrm.tests.LoginPageTest"/>
+ 			<class name="com.orangehrm.tests.HomePageTest" />
+ 			<class name="com.orangehrm.tests.EmployeeListPageTest" />
+ 			<class name="com.orangehrm.tests.GenInfoPageTest" />
+ 		</classes>
+	</test>  
+ 
+    
+</suite>
