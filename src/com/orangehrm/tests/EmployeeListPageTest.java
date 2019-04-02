@@ -39,33 +39,7 @@ public class EmployeeListPageTest extends BaseTest{
 	}
 	
 	
-	@DataProvider(name="employeeData")
-    public Object[][] userFormData() throws Exception
-    {
-        Object[][] data = testData("C:\\Users\\nkrishna\\Desktop\\Edge\\Automation\\Reflektive\\Tookitaki\\EmployeeData.xlsx", "Employee");
-        return data;
-    }
-     
-    public Object[][] testData(String xlFilePath, String sheetName) throws Exception
-    {
-        Object[][] excelData = null;
-        ExcelUtility xl = new ExcelUtility();
-        xl.
-        int rows = xl.getRowCount(sheetName);
-        int columns = xl.getColumnCount(sheetName);
-                 
-        excelData = new Object[rows-1][columns];
-         
-        for(int i=1; i<rows; i++)
-        {
-            for(int j=0; j<columns; j++)
-            {
-                excelData[i-1][j] = eat.getCellData(sheetName, j, i);
-            }
-             
-        }
-        return excelData;
-    }
+	
 
 
 
